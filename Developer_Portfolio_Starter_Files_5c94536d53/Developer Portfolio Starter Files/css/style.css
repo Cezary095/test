@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Prata&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0a0a0b;
+    color: white;
+    justify-content: center;
+    font-family: "Inter", Arial, Helvetica, sans-serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+h1, h2, h3 {
+    font-family: "Prata", Arial, Helvetica, sans-serif;
+    color: #fff;
+    font-weight: lighter;
+
+}
+
+p {
+    color: gray;
+    font-size: 20px;
+    line-height: 27px;
+}
+
+.name {
+    font-family: "Prata", Arial, Helvetica, sans-serif;
+    color: #fff;
+    font-weight: lighter;
+}
+
+.button {
+    border: none;
+    background-color: #fbe850;
+    font-size: 20px;
+    padding: 15px 30px;
+    font-family: "Prata", Arial, Helvetica, sans-serif;
+}
+
+.gray {
+    background-color: #2e3038;
+    width: 100%;
+}
+
+@media screen and (max-width: 480px) {
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        padding: 2em 1.5em 0 1.5em;
+    }
+
+    h1, h2 {
+        font-size: 35px;
+    }
+
+    footer  {
+        display: flex;
+        justify-content: space-around;
+        padding: 1.5em 0;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .image {
+        padding-top: 2em;
+        padding-bottom: 0.8em;
+    }
+
+    .container {
+        padding: 4em 1.5em;
+    }
+
+    .container > p {
+        padding: 0.7em 0;
+    }
+
+    .top-button {
+        display: none;
+    }
+/* TODO: Off canvas */
+    .navmenu {
+        display: none;
+    }
+  
+    .burger-menu {
+        background-color: #0a0a0b;
+        border: none;
+        position: relative;
+        top: -3px;
+
+    }
+  .burger-menu > div {
+    width: 28px;
+    height: 4px;
+    background-color: white;
+    margin: 5px 0;
+    
+    
+  }
+
+    .logo {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 80%;
+        margin: auto;
+    }
+    
+    .logo > div {
+        display: flex;
+        white-space: nowrap;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .logo > div > a {
+        padding: 1em;
+    }
+
+    .icon {
+        display: flex;
+        justify-content: space-around;
+        gap: 14px;
+    }
+}
